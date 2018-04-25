@@ -1,0 +1,43 @@
+Name: Peter Nguyen
+Date: 4/23/2018
+Purpose of this project: To understand the fundamental structure of linked lists
+
+What is necessary to understand linked lists?
+
+1) What is a linked list?
+
+	A linked list is a type of data structure that is used to implement an
+	abstract data type (ADT). The list structure typically has a pointer to
+	the first node (the "head" node) and a pointer to the last node (the
+	"tail" node).
+
+2) What kinds of linked lists are there?
+	
+	Typically, there are "singly-linked-lists" and "doubly-linked-lists." A
+	singly-linked-list is a list where each node has data, as well as a 
+	pointer to the next node after it. A doubly-linked-list is a list where
+	each node has data, as well as a pointer to the node before it and a
+	pointer to the node after it. 
+
+	Note: a linked list can be "linearly-linked" or "circularly-linked."
+		
+		A singly-linked list can be linearly-linked if the tail node's
+		next pointer is NULL, or circularly-linked if the tail-node's 
+		next pointer points towards the head node.
+
+		A doubly-linked list list can be linearly-linked if the head
+		node's pre-pointer and the tail node's next-pointer are NULL.
+		On the other hand, a doubly-linked list can be circularly linked
+		if the head node's pre-pointer points towards the tail node, and
+		the tail node's next-pointer points towards the head node.
+
+3) What classes, member fields, constructors, etc. are required?
+
+	Linked List:
+		head:
+		tail:
+
+	Node:
+		data:
+		next:
+		pre:
